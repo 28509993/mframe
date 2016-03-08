@@ -1,0 +1,32 @@
+{
+  "redis": [
+    {
+      "sn": 15,
+      "address": "127.0.0.1",
+      "port": "6379",
+      "password":1,
+      "options":{"auth_pass":"go32145"},
+      "db": 0
+    }
+  ],
+  "log": [
+    {
+      "type": "console"
+    },
+    {
+      "type": "file",
+      "filename": "logs/normal.log",
+      "maxLogSize": 4096000,
+      "backups": 200,
+      "category": "normal"
+    },
+    {
+      "type": "file",
+      "filename": "logs/access.log",
+      "maxLogSize": 4096000,
+      "backups": 200,
+      "category": "access"
+    }
+  ]
+
+}
