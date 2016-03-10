@@ -56,7 +56,7 @@ exports.mainServer=function(options) {
     var app = express();
     loadExtendLib(app,options);
     var tree = mauk.treeRouter(app)();
-    tree.load(path.resolve('app/app1'));
+    tree.load(path.resolve('app/demo'));
     app.use(extend.log.use())
         .use(tree.route());
     setError.call(app);
